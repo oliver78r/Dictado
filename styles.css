@@ -22,7 +22,7 @@ body {
   justify-content: center;
 }
 
-/* ===== APP CONTAINER ===== */
+/* ===== APP ===== */
 .app {
   background: #ffffff;
   width: 520px;
@@ -31,7 +31,6 @@ body {
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 
-  /* 🔥 clave para que no choque */
   max-height: calc(100vh - 40px);
   overflow: hidden;
 
@@ -58,7 +57,6 @@ textarea {
   font-size: 14px;
   outline: none;
   line-height: 1.4;
-
   overflow-y: auto;
 }
 
@@ -82,7 +80,7 @@ select {
   font-size: 13px;
 }
 
-/* ===== CURRENT PHRASE ===== */
+/* ===== PHRASE ===== */
 .phrase-box {
   margin-top: 10px;
   padding: 14px;
@@ -93,7 +91,6 @@ select {
   font-size: 15px;
   font-weight: 500;
   border-left: 4px solid var(--green);
-
   overflow-y: auto;
 }
 
@@ -124,7 +121,27 @@ button:active {
   transform: scale(0.97);
 }
 
-/* ===== RESPONSIVE MOBILE ===== */
+/* ===== FOOTER ===== */
+.app-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray);
+  border-top: 1px solid #e5e7eb;
+}
+
+.app-footer a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
   body {
     padding: 12px;
