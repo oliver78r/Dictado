@@ -95,7 +95,55 @@ button {
 button:hover {
   opacity: 0.9;
 }
+/* ===== AJUSTES RESPONSIVE ===== */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    height: auto;
+    padding: 16px;
+  }
+
+  .app {
+    width: 100%;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  textarea {
+    height: 130px;
+    font-size: 13px;
+  }
+
+  .settings {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  select {
+    font-size: 13px;
+  }
+
+  .phrase-box {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
 
 button:active {
   transform: scale(0.97);
+
 }
