@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictado Escolar</title>
+
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>🎧 Dictado Escolar</h1>
+
+    <textarea
+      id="textInput"
+      placeholder="Pega aquí el texto que te van a dictar..."
+    ></textarea>
+
+    <div class="settings">
+      <select id="voiceSelect">
+        <option>Cargando voces...</option>
+      </select>
+
+      <select id="pauseSelect">
+        <option value="3000">Pausa 3 segundos</option>
+        <option value="5000">Pausa 5 segundos</option>
+      </select>
+    </div>
+
+    <div class="phrase-box" id="currentPhrase">
+      Aquí aparecerá la frase actual…
+    </div>
+
+    <div class="controls">
+      <button onclick="startDictation()">▶ Iniciar</button>
+      <button onclick="repeatSentence()">🔁 Repetir</button>
+      <button onclick="nextSentence()">⏭ Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Enlace al JS -->
+  <script src="script.js"></script>
+</body>
+</html>
